@@ -15,13 +15,16 @@ export class LoginComponent implements OnInit {
   
   onLogin(ref){
     let hodLoginObject=ref.value;
-    if(hodLoginObject.username!='B.V Kiranmai' && hodLoginObject.password!='welcome@123'){
-      alert("Invalid Credentials")
+    if(hodLoginObject.username=='B V Kiranmai' && hodLoginObject.password=='hello1234'){
+      this.router.navigateByUrl("/AdminHOD")
+    }  
+    else if(hodLoginObject.username=='19071A3244' && hodLoginObject.password=='hello1234'){
+      this.router.navigateByUrl("/adminn")
     }  
     else{
-      this.router.navigateByUrl("/AdminHOD")
-
-    }  
+      alert("invalid credentials")
+    }
+    
   
     
   }

@@ -1,0 +1,58 @@
+<form  class="w-50 mx-auto mt-5" #ref="ngForm" (ngSubmit)="onSubmit(ref.value)">
+    <div class="form-floating mb-3">
+        <input type="username" class="form-control" id="Name" placeholder="name@example.com" name="Name" ngModel>
+            
+        <label for="Name">Faculty-id</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="ID" placeholder="ID" name="ID" l ngModel>
+        <label for="ID">Type</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="Age" placeholder="name@example.com" name="Age" ngModel >
+        <label for="Age">topic</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="dob" placeholder="Email" name="dob" l ngModel>
+        <label for="dob">Start Date</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="qf" placeholder="name@example.com" name="qf" ngModel >
+        <label for="qf">End Date</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="username" placeholder="ID" name="username" l ngModel>
+        <label for="username">Duration</label>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Target Audience</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>BTECH 1 YEAR CSE</option>
+            <option>BTECH 1 YEAR IT</option>
+            <option>BTECH 1 YEAR CSBS</option>
+            <option>BTECH 2 YEAR CSE</option>
+            <option>BTECH 2 YEAR IT</option>
+            <option>BTECH 2 YEAR CSBS</option>
+  
+        
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">FUND</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>YES</option>
+            <option>NO</option>
+            </select>
+            </div>
+    <div class="form-floating mt-2 mb-3">
+        <input type="text" class="form-control" id="ep" placeholder="ID" name="ep" l ngModel>
+        <label for="ep">Organizer</label>
+    </div>
+    
+
+
+    
+
+    <button class="btn btn-success d-block mx-auto" type="submit">Submit</button>
+</form>
+
