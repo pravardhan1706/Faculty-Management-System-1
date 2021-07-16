@@ -27,7 +27,19 @@ const routes: Routes = [{ path: '', component: AdminnComponent },
 
 
 ]},
-{path:'attended',component:AttendedComponent}];
+{path:'attended',component:AttendedComponent, children:[
+  {path:'gl',component:GuestlecturesComponent},
+  {path:'wk',component:WorkhopsComponent},
+  {path:'wb',component:WebinarComponent},
+  {path:'sm',component:SeminarsComponent},
+  {path:'fp',component:FDPComponent},
+  {path:'sp',component:SDPComponent},
+  {path:'cf',component:CertificationsComponent},
+  {path:'cs',component:ConferencesComponent},
+
+
+
+]},]
 
 
 @NgModule({
